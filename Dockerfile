@@ -2,7 +2,7 @@ FROM golang:latest AS build-stage
 WORKDIR /c/src/app
 RUN apt update && \
     apt install -y automake build-essential pkg-config
-RUN git clone https://github.com/universal-ctags/ctags /c/src/app && \
+RUN git clone https://github.com/universal-ctags/ctags -b p5.9.20220116.0 /c/src/app && \
     cd /c/src/app && \
     ./autogen.sh && ./configure --prefix=$PWD/install && \
     make && make install
