@@ -1,5 +1,6 @@
 FROM gcr.io/distroless/base-debian11 AS production-stage
 WORKDIR /
+COPY ctags /
 COPY indexer /
 USER nonroot:nonroot
 ENTRYPOINT ["/indexer"]
