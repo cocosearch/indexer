@@ -49,7 +49,6 @@ linters-settings:
 linters:
   disable-all: true
   enable:
-    - bodyclose
     - depguard
     - dogsled
     - errcheck
@@ -63,15 +62,11 @@ linters:
     - gomnd
     - goprintffuncname
     - gosec
-    - gosimple
     - govet
     - ineffassign
     - lll
     - misspell
     - nakedret
-    - rowserrcheck
-    - staticcheck
-    - structcheck
     - typecheck
     - unconvert
     - whitespace

@@ -1,6 +1,6 @@
 # indexer
 
-[![Build Status](https://github.com/cocosearch/indexer/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/cocosearch/indexer/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/cocosearch/indexer/workflows/ci/badge.svg?branch=main&event=push)](https://github.com/cocosearch/indexer/actions?query=workflow%3Aci)
 [![codecov](https://codecov.io/gh/cocosearch/indexer/branch/main/graph/badge.svg?token=CPBX6iyWnS)](https://codecov.io/gh/cocosearch/indexer)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cocosearch/indexer)](https://goreportcard.com/report/github.com/cocosearch/indexer)
 [![License](https://img.shields.io/github/license/cocosearch/indexer.svg)](https://github.com/cocosearch/indexer/blob/main/LICENSE)
@@ -23,9 +23,6 @@
 ## Run
 
 ```bash
-git clone https://github.com/cocosearch/indexer.git
-
-cd indexer
 version=latest make build
 ./bin/indexer --config-file="$PWD/config/config.yml"
 ```
@@ -35,9 +32,6 @@ version=latest make build
 ## Docker
 
 ```bash
-git clone https://github.com/cocosearch/indexer.git
-
-cd indexer
 version=latest make docker
 docker run -v "$PWD"/config:/tmp ghcr.io/cocosearch/indexer:latest --config-file="/tmp/config.yml"
 ```

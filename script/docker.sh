@@ -2,4 +2,4 @@
 
 tag="$1"
 
-docker build --no-cache -f Dockerfile -t ghcr.io/cocosearch/indexer:"$tag" .
+docker build -f Dockerfile -t ghcr.io/cocosearch/indexer:"$tag" .
